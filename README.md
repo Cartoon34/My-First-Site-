@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to to TollGate</h1>
+    <h1>Welcome to TollGate</h1>
     <p>Toll for Tollgatians .</p>
   </div>
 </body>
