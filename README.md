@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>DJ Mixtape Showcase</title>
+  <style>
+    body {
+      background-color: #0a0a23;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: #1a1a40;
+    }
+
+    h1 {
+      margin: 0;
+      color: #4dabf7;
+    }
+
+    .mixtape {
+      margin: 20px auto;
+      width: 90%;
+      max-width: 600px;
+      background-color: #1f1f3a;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px #4dabf7;
+    }
+
+    .mixtape h2 {
+      color: #4dabf7;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .like-btn {
+      background-color: #4dabf7;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .like-btn:hover {
+      background-color: #339af0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a40;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to TollGate</h1>
-    <p>TollGate for Tollgatians .</p>
+
+  <header>
+    <h1>DJ Masters - Mixtapes</h1>
+    <p>🔥 Fresh drops from your favorite DJ</p>
+  </header>
+
+  <div class="mixtape">
+    <h2>🔥 Mixtape Vol. 1</h2>
+    <audio controls>
+      <source src="your-mixtape-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <button class="like-btn" onclick="likeMixtape('Mixtape Vol. 1')">👍 Like</button>
   </div>
+
+  <div class="mixtape">
+    <h2>🎶 Mixtape Vol. 2</h2>
+    <audio controls>
+      <source src="your-mixtape-2.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <button class="like-btn" onclick="likeMixtape('Mixtape Vol. 2')">👍 Like</button>
+  </div>
+
+  <footer>
+    &copy; 2025 DJ Masters. All rights reserved.
+  </footer>
+
+  <script>
+    function likeMixtape(mixtapeName) {
+      alert(`Thanks for liking ${mixtapeName}!`);
+
+      // Email notification using EmailJS (optional)
+      // Replace with your own service or backend
+      sendLikeEmail(mixtapeName);
+    }
+
+    function sendLikeEmail(mixtapeName) {
+      // Placeholder only - actual email service needed
+      console.log(`Would send email: Someone liked ${mixtapeName}`);
+      // In real use, integrate EmailJS or Formspree
+    }
+  </script>
+
 </body>
 </html>
