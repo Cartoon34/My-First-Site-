@@ -5,24 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My  Page</title>
   <style>
-    body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fff; color: #000; }
 
-.container {
-  text-align: center;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+header { background-color: red; color: white; padding: 20px; text-align: center; }
+
+nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; background-color: darkred; }
+
+nav ul li { margin: 0 15px; }
+
+nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+
+main { padding: 20px; }
+
+section { margin-bottom: 40px; }
+
+form { display: flex; flex-direction: column; max-width: 400px; margin-top: 10px; }
+
+form label, form input, form textarea, form button { margin-bottom: 10px; }
+
+form input, form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+
+form button { background-color: red; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 5px; }
+
+form button:hover { background-color: darkred; }
+
+footer { background-color: red; color: white; text-align: center; padding: 10px; position: relative; bottom: 0; width: 100%; }
  </style>
 </head>
 <body>
